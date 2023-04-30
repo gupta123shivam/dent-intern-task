@@ -1,0 +1,54 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.transcript-player {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  width: 560px;
+  margin: auto;
+  background-color: #f5f5f5;
+}
+
+.transcript-player-item {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #fff;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #333;
+  cursor: pointer;
+}
+
+.transcript-player-item .active {
+  /* background-color: #008080; */
+  color: "gray";
+}
+
+.highlight {
+  position: fixed;
+  /* background-color: rgba(255, 255, 0, 0.5); */
+  /* border: 2px solid rgba(255, 255, 0, 1); */
+  /* box-sizing: border-box; */
+  z-index: 100;
+  transition: all 0.5s ease-out;
+  opacity: 0.5;
+  overflow: visible;
+}
+
+.highlight > span {
+  display: inline-block;
+  background-color: rgb(0, 0, 0);
+  opacity: none;
+  color: rgb(253, 250, 250);
+}
+
+.audio-player {
+  margin: auto;
+  margin-top: 1rem;
+  border: 1px solid black;
+}
